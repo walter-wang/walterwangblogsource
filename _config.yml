@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: Walter's Blog
+subtitle: Personal Blog
+description: Blog of Walter Wang
+author: Walter Wang
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://blog.walterwang.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -77,4 +77,7 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/walter-wang/walter-wang.github.io.git
+  branch: [master] 
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
